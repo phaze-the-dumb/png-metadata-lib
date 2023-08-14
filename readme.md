@@ -5,7 +5,7 @@
 Example:
 
 ```js
-const { PNGImage } = require('png-metadata-lib');
+const { PNGImage } = require('png-metadata');
 
 let png = new PNGImage('FILE BUFFER');
 
