@@ -5,7 +5,7 @@ Example:
 ```js
 const { PNGImage } = require('png-metadata');
 
-let png = new PNGImage('FILE PATH OR BUFFER');
+let png = new PNGImage('FILE BUFFER');
 
 console.log(png)
 

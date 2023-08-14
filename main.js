@@ -1,10 +1,8 @@
-const fs = require('fs');
-
 class PNGImage{
   /***
-   * @param {Buffer | String} buffOrPath
+   * @param {Buffer} buffOrPath
    */
-  constructor( buffOrPath ){
+  constructor( buff ){
     this.width = null;
     this.height = null;
     this.bitDepth = null;
@@ -13,11 +11,6 @@ class PNGImage{
     this.filterMethod = null;
     this.interlaceMethod = null;
     this.meta = {};
-
-    let buff = buffOrPath;
-
-    if(!buffOrPath instanceof Buffer)
-      buff = fs.readFileSync(buffOrPath);
 
     // Check for 8-byte signature, if it doesn't have it then its not a png.
     if(
