@@ -1,9 +1,11 @@
 # PNG Metadata Lib
 
+`npm i github:phaze-the-dumb/png-metadata-lib`
+
 Example:
 
 ```js
-const { PNGImage } = require('png-metadata');
+const { PNGImage } = require('png-metadata-lib');
 
 let png = new PNGImage('FILE BUFFER');
 
