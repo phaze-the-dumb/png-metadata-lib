@@ -1,6 +1,6 @@
 class PNGImage{
   /***
-   * @param {Buffer} buffOrPath
+   * @param {Buffer} buffer
    */
   constructor( buff ){
     this.width = null;
@@ -52,7 +52,7 @@ class PNGImage{
         } catch(e){
           this.meta[d[0]] = d[1];
         }
-        
+
         break;
     }
 
