@@ -1,5 +1,7 @@
 # PNG Metadata Lib
 
+`npm i github:phaze-the-dumb/png-metadata-lib`
+
 Example:
 
 ```js
