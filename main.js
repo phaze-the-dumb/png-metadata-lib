@@ -56,7 +56,7 @@ class PNGImage{
         break;
     }
 
-    if(type !== 'IEND')
+    if(type !== 'IEND' && type !== 'IDAT')
       this.readPngChunk(length + 12, buff);
   }
 
